@@ -7,15 +7,13 @@
       <section class="micropost_form">
         <%= render 'shared/micropost_form' %>
       </section>
-      <div class="col-md-8">
-        <h3>Micropost Feed</h3>
-        <%= render 'shared/feed' %>
-      </div>
     </aside>
+    <div class="col-md-8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
   </div>
-
 <% else %>
-
   <div class="center jumbotron">
     <h1>Welcome to the Sample App</h1>
 
@@ -29,6 +27,5 @@
   </div>
 
   <%= link_to image_tag("rails.png", alt: "Rails logo"),
-            'http://rubyonrails.org/' %>
-
+              'http://rubyonrails.org/' %>
 <% end %>
